@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font size 62.5% */
+body{
+    font-size: 62.5%;
+}
+
+/* selecttores de etiqueta */
+h1,h2{
+color: rgb(243, 255, 243);
+font-family: 'Source Code Pro', sans-serif; 
+font-weight: 100;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+h1{
+   /*1em es aprox 16px */
+   /*1rem es aprox 10px */
+
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+table{
+    font-weight: 500%;
+    font-size: 200%;
+}
+
+
+/*LO DE ARRIBA DE ESTO ES UN SELECTOR DE GRUPO */
+
+.align-items{
+    align-items: center;
+    }
+    
+
+p{
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.30rem;
+    line-height: 1.35rem;
+
+}
+
+label{
+    color: blue;
+}
+
+/* selectores de clases */
+
+
+.text-green{
+    color: green;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-lighlight{
+background-color: black;
+}
+.bg-violet{
+    background-color: rgba(0, 0, 0, 50%);
+    border-top: solid 5px red;
+    border-right: solid 5px cyan;
+    border-bottom: solid 5px greenyellow;
+    border-left: solid 5px yellowgreen;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    width: 93%
+}
+.bg-gris{
+    background-color: aliceblue;
+}
+
+.box-top{
+    padding: 0px;
+    text-align: center;
+    color: grey;
+    background-color: aliceblue;
+    font-size: 2rem;
+    width: 97.6%;
+
+}
+
+.bg-pattern{
+background-image: url(../background/background.jpg);
+background-repeat: repeat;
+background-attachment: fixed;
+}
+
+.table-center{
+   height: 300px;
+   font-family: 'Source Code Pro', sans-serif; 
+   font-weight: 700;
+   border-top: solid 5px palegreen;
+   border-left: solid 5px palegoldenrod;
+   border-bottom: solid 5px paleturquoise;
+   border-right: solid 5px palevioletred;
+   width: 500px;
+    margin: 0 auto; 
+    
+}
+
+.linkMore{
+    color: gray;
+    font-size: 1.2rem;
+    text-decoration: dashed;
+    border-bottom: 3px;
+    border-color: brown;
+    background-color: black;
+}
+
+.img-vinchi{
+   width:  100vh;
+    object-fit: cover;
+    padding-left: 3%;
+}
+
+.img-promo{
+    object-fit: cover;
+    height: 60vh;
+}
+
+.img-mujer{
+   width: 90vh;
+    object-fit: cover;
+}
+
+.img-contactate{
+    height: 60vh;
+    object-fit: cover;
+    padding-left: 3%;
+    justify-content: center;
+}
+
+.img{
+    object-fit: cover;
+    width: 100%;
+    align-items: center;
+}
+/*TAMAÑO CATALOGO*/
+
+.img2{
+    width: 250px;
+
+}
+/*TAMAÑO LOGO VAGO*/
+
+.img3{
+    width: 50px;
+
+}
+/*TAMAÑO IMAGENES IG Y FB */
+
+.img4{
+    width: 100%;
+
+}
+
+.d-flex{
+    display: flex;
+}
+
+
+/*BOX MODEL - width- height- margin- padding- border */
+
+/*OVERFLOW2*/
+
+nav{
+    background-color: black;
+    border-top: solid 5px red;
+    border-right: solid 5px cyan;
+    border-bottom: solid 5px greenyellow;
+    border-left: solid 5px yellowgreen;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    width: 150px;
+}
+
+nav ul{
+    /* flex */
+    list-style: none;
+    display: flex;
+    margin-left:  20px;
+}
+
+nav ul li{
+    color: gainsboro;
+    margin-right: 10px;
+    }
+
+nav ul li a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+    font-size: 1.6em;
+    font-family: 'Source Code Pro', sans-serif; 
+    font-weight: 300;
+}
+
+nav ul li a:visited{
+    color: darkgrey;
+}
+
+nav ul li a:active{
+    color: red;
+}
+
+
+
+
+.d-block{
+    display: block;
+
+}
+
+    .contenedor{
+        width: 100%;
+        height: auto;
+
+    }
+    .productos{
+        padding: 0 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .productos figure{
+        width: 30%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+    }
+
+    .productos figure p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 20px 0;
+        text-align: left;
+
+    }
+
+    .productos figure figcaption{
+        color: black;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    .productos figure button{
+        border: solid;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+
+    }
+
+
+    footer{
+        margin-top: 50px;
+        background-color: rgb(3, 34, 59);
+         display: flex;
+         justify-content: space-around;
+        
+        
+
+
+    }
+
+        footer svg{
+            width: 30px;
+            margin-right: 10px;
+    
+
+        }
+
+        footer a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.3rem;
+            display: block;
+        }
+
+        .template-areas{
+            grid-template-columns: repeat();
+            grid-template-rows: 10% 60% 10%;
+            grid-template-areas:
+            "nav nav nav"
+            "main main main"
+            "footer footer footer"
+        }   
+
+        #botonera{
+            grid-area: nav;
+        }
+
+        #centro{
+            grid-area: main;
+        }
+
+        #links-interes{
+            grid-area: link;
+        }
+
+        #pie{
+            grid-area: footer;
+        }
+        /* POSICION DE LOS ELEMENTOS */
+
+
+/* TIENDA CON GRIDS */  
+
+        .filters{
+            padding: 0 20px 30px 30px;
+            border-radius: 9px;
+        }
+
+        .filters a{
+            color: black;
+            font-size: 1.3em;
+            text-decoration: none;
+            margin-bottom: 4px;
+            text-transform: lowercase;
+    
+        }
+
+        .filters a:hover{
+            color: brown;
+        }
+
+        .filters span{
+        display: block;
+        color: black;
+        margin: 10px 0;
+        letter-spacing: 1px;
+
+        }
+
+        .filters select{
+        color: black;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 10px;
+        font-size: 1.4em;
+
+        }
+
+        .filters li{
+        padding-left: 10px;
+        list-style: none;
+
+        }
+
+        .actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 3px;
+
+        }
+
+        .actions button{
+        margin-left: 10px;
+        background-color: brown;
+        color: aliceblue;
+        padding: 7px;
+        border: none;
+        border-radius: 3px;
+        }
+
+        .actions input{
+        padding: 6px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgb(3, 34, 59);
+        align-items: center;
+        
+        }
+        .principal{
+            display: grid;
+            grid-template-columns:auto auto;
+            justify-content: center;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "header header"
+            "info info2"
+            "cathombre promo"
+            "cathombre catmujer"
+            "contacto catmujer";
+        }
+
+        .cathombre{
+            grid-area: cathombre;
+            display: flex;
+            justify-content: center;
+        }
+
+        .catmujer{
+            grid-area: catmujer;
+            display: flex;
+        }
+
+        .promo{
+            grid-area: promo;
+            display: flex;
+        }
+
+        .contacto{
+            grid-area: contacto;
+            display: flex;
+        }
+
+        .info{
+            grid-area: info;
+            display: flex;
+        }
+        
+
+        .info2{
+            grid-area: info2;
+            display: flex;
+        }
+
+        .header{
+            grid-area: header;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            object-fit: cover;
+            justify-self: center;
+        }
+
+        .tienda{
+            display: grid;
+            grid-template-areas:
+            "actions actions actions actions"
+            "prod1 prod2 prod3 prod4"
+            "prod5 prod6 prod7 prod8";
+             grid-column-gap: 8px;
+             grid-row-gap: 8px;
+        }
+
+        .tienda section{
+            border-radius: 10px;
+        }
+
+        .tienda .actions{
+            background-color: aliceblue;
+            padding: 0 30px;
+            grid-area: actions;
+        }
+
+        .tienda .prod1{
+            grid-area: prod1;
+            display: grid;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tienda .prod2{
+            grid-area: prod2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tienda .prod3{
+            grid-area: prod3;
+            display: flex;
+
+        }
+        .tienda .prod4{
+            grid-area: prod4;
+            display: flex;
+
+        }
+
+        .tienda .prod5{
+            grid-area: prod5;
+            display: flex;
+
+        }
+
+        .tienda .prod6{
+            grid-area: prod6;
+            display: flex;
+
+        }
+        
+        .tienda .prod7{
+            grid-area: prod7;
+            display: flex;
+
+        }
+
+        .tienda .prod8{
+            grid-area: prod8;
+            display: flex;
+
+        }
+
+    /* ---- BEM  (NOSOTROS) ---- */
+.about{
+    padding: 10px   0;
+}
+
+.about__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about__box--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+.about__header--left{
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 60px;
+}
+
+.about__text--md{
+    font-size: 1.8rem;
+}
+
+.about__link--left{
+    display: block;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding-left: 60px;
+    margin: 10px 0;
+}
+
+.about__list--gris{
+    color: grey;
+    list-style: square;
+    padding-left: 80px;
+    font-size: 1.4em;
+    line-height: 1.8em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+/*------ Pseudo clases (.about) ------*/
+
+/* --- hover ---  */
+.about__img--md:hover{
+    border: solid 1px black;
+}
+/* --- visited --- */
+
+/*--- active --- */
+
+/* --- first child --- */
+
+/*
+.about ul li:first-child{
+
+}
+*/
+
+/* --- nth child --- */
+.about ul li:nth-child(){
+    color: black;
+}
+/* --- last child --- */
+.about ul li:last-child{
+    color: aquamarine;
+}
+/* --- :not --- */
+/*
+.about ul li:not(#){
+
+} */
+
+/* ===== Pseudo elementos (.about) =====  */
+
+/*------ before ------*/
+.about h2.one::before{
+    content: "**";
+    margin-right: 10px;
+}
+/*------ after ------*/
+.about h2.one::after{
+    content: "**";
+    color: black;
+    margin-left: 10px;
+}
+/*------ first latter ------*/
+.about p.two::first-letter{
+    color: darkgoldenrod;
+    font-size: 2em;
+    background-color: aliceblue;
+}
+/*------ first line ------*/
+.about p.two::first-line{
+    font-weight: 700;
+}
+
+/* ===== selectores avanzados =====  */
+
+/*------ selector por atributo------*/
+
+/*.about img[src="../img/header.jpg"]*/
+
+/*------ selector hijo > ------*/
+
+/*.about p > span{
+    color: blue;
+}*/
+
+@media(max-width: 768px){
+   .tienda{
+        display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(9,auto);
+        grid-template-areas:
+        "actions"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6"
+        "prod7"
+        "prod8";
+         grid-column-gap: 8px;
+         grid-row-gap: 8px;
+    }
+
+    .principal{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:
+        "header header"
+        "info info2"
+        "cathombre promo"
+        "cathombre catmujer"
+        "contacto catmujer";
+    }
+   
+
+   .tienda section{
+    padding: 10px 0;
+    margin: 0 20px;
+   }
+
+   nav{
+    justify-content: center;
+   }
+
+   nav ul{
+    display: none;
+   }
+
+   .tienda .prod1{
+    flex-direction: column;
+   }
+
+   .tienda .prod2{
+    flex-direction: column;
+   }
+
+   .tienda .prod3{
+    flex-direction: column;
+   }
+
+   .tienda .prod4{
+    flex-direction: column;
+   }
+
+   .tienda .prod5{
+    flex-direction: column;
+   }
+
+   .tienda .prod6{
+    flex-direction: column;
+   }
+
+   .tienda .prod7{
+    flex-direction: column;
+   }
+
+   .tienda .prod8{
+    flex-direction: column;
+   }
+
+   .actions{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   }
+
+   .actions input[placeholder="buscar"]{
+    width: 350px;
+   }
+
+   footer{
+    flex-direction: column;
+    align-items: center;
+   }
+
+    footer svg{
+        width: 40px;
+    }
+
+    footer div:nth-child(2){
+        margin: 10px 0;
+    }
+
+    footer a{
+        font-size: 1.6em;
+    }
+
+}
+
+  .colo1{
+    background-color: #000000;
+  }
+  
+  .color2{
+    background-color:  #0b0712;
+  }
+
+  .color3{
+    background-color: #030804;
+  }
+
+  .color4{
+    background-color: #040c09;
+  }
+
+  .btn-color5{
+    background-color: #050e0f;
+    color: white;
+  }
+
